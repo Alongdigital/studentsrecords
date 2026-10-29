@@ -6,7 +6,7 @@
    ===================================== */
 
 // Paste your deployed Google Apps Script Web App URL here.
-const API_URL = "https://script.google.com/macros/s/AKfycbzdrZ1Xy6OwxaFNAT48UHVA1Xrsi8XRQkLAfjZAun2mAINu_f3NdNtRwQplKJ-Ro035/exec";
+const API_URL = "https://script.google.com/macros/s/AKfycbztL2zshsS0BLoCztGzzqvVezIeTUdgATe7T9M9TazKjH_Fq1i9NdjwBemQ4akRWdQ7/exec";
 
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("studentForm");
