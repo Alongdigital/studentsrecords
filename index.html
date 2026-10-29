@@ -1,0 +1,497 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="theme-color" content="#10182f">
+  <meta name="description" content="Premium Student Data Entry System">
+
+  <title>Student Portal | Premium Data Entry</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="page-background"></div>
+
+  <main class="app-container">
+
+    <!-- TOP NAVIGATION -->
+    <header class="topbar">
+      <a href="#" class="brand">
+        <div class="brand-logo">
+          <img id="siteLogo" src="" alt="Portal Logo">
+          <i class="fa-solid fa-graduation-cap logo-fallback"></i>
+        </div>
+
+        <div class="brand-text">
+          <h1>Student<span>Portal</span></h1>
+          <p>STUDENT MANAGEMENT SYSTEM</p>
+        </div>
+      </a>
+
+      <div class="topbar-right">
+        <span class="system-status">
+          <span class="status-dot"></span>
+          Data Entry
+        </span>
+
+        <div class="admin-avatar" aria-label="Administrator">
+          <i class="fa-solid fa-user-shield"></i>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+
+      <div class="hero-content">
+        <div class="eyebrow">
+          <i class="fa-solid fa-sparkles"></i>
+          PREMIUM STUDENT PORTAL
+        </div>
+
+        <h2>
+          Every Student.<br>
+          <span>One Smart Record.</span>
+        </h2>
+
+        <p class="hero-description">
+          Manage student identities, academic classes and
+          essential records through one simple, organized form.
+        </p>
+
+        <div class="hero-features">
+          <span>
+            <i class="fa-solid fa-shield-halved"></i>
+            Organized Records
+          </span>
+
+          <span>
+            <i class="fa-solid fa-bolt"></i>
+            Quick Entry
+          </span>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <img
+          id="heroImage"
+          src=""
+          alt="Students learning in a modern educational environment"
+        >
+
+        <div class="hero-image-overlay"></div>
+
+        <div class="hero-floating-card">
+          <div class="floating-icon">
+            <i class="fa-solid fa-user-graduate"></i>
+          </div>
+
+          <div>
+            <strong>Student Records</strong>
+            <p>One organized database</p>
+          </div>
+
+          <i class="fa-solid fa-circle-check floating-check"></i>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- FORM SECTION -->
+    <section class="form-card">
+
+      <div class="form-heading">
+        <div class="form-heading-icon">
+          <i class="fa-solid fa-address-card"></i>
+        </div>
+
+        <div>
+          <h2>Student Registration Details</h2>
+          <p>Enter the student's information carefully.</p>
+        </div>
+
+        <span class="required-note">
+          <span>*</span> Required
+        </span>
+      </div>
+
+      <div class="section-divider"></div>
+
+
+      <!-- FORM -->
+      <form id="studentForm" autocomplete="on">
+
+        <!-- STUDENT IDENTITY -->
+        <div class="form-section-title">
+          <span class="section-number">01</span>
+
+          <div>
+            <h3>Personal Information</h3>
+            <p>Student identification and personal details</p>
+          </div>
+        </div>
+
+        <div class="form-grid">
+
+          <!-- Internal Record ID -->
+          <div class="form-group">
+            <label for="id">
+              Record ID <span class="required-star">*</span>
+            </label>
+
+            <div class="input-wrapper">
+              <i class="fa-solid fa-fingerprint input-icon"></i>
+
+              <input
+                type="text"
+                id="id"
+                name="id"
+                placeholder="e.g. REC-1001"
+                maxlength="50"
+                autocomplete="off"
+                required
+              >
+            </div>
+
+            <small>Unique ID for this database record.</small>
+          </div>
+
+
+          <!-- Student Name -->
+          <div class="form-group">
+            <label for="name">
+              Full Name <span class="required-star">*</span>
+            </label>
+
+            <div class="input-wrapper">
+              <i class="fa-regular fa-user input-icon"></i>
+
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter student's full name"
+                maxlength="100"
+                autocomplete="name"
+                required
+              >
+            </div>
+          </div>
+
+
+          <!-- Student ID -->
+          <div class="form-group">
+            <label for="studentId">
+              Student ID <span class="required-star">*</span>
+            </label>
+
+            <div class="input-wrapper">
+              <i class="fa-solid fa-id-badge input-icon"></i>
+
+              <input
+                type="text"
+                id="studentId"
+                name="studentId"
+                placeholder="Enter unique Student ID"
+                maxlength="50"
+                autocomplete="off"
+                required
+              >
+            </div>
+
+            <small>Official student identification number.</small>
+          </div>
+
+
+          <!-- Roll Number -->
+          <div class="form-group">
+            <label for="rollNo">
+              Roll Number <span class="required-star">*</span>
+            </label>
+
+            <div class="input-wrapper">
+              <i class="fa-solid fa-list-ol input-icon"></i>
+
+              <input
+                type="text"
+                id="rollNo"
+                name="rollNo"
+                placeholder="Enter roll number"
+                maxlength="30"
+                autocomplete="off"
+                required
+              >
+            </div>
+          </div>
+
+
+          <!-- DOB -->
+          <div class="form-group">
+            <label for="dob">
+              Date of Birth <span class="required-star">*</span>
+            </label>
+
+            <div class="input-wrapper">
+              <i class="fa-regular fa-calendar input-icon"></i>
+
+              <input
+                type="date"
+                id="dob"
+                name="dob"
+                required
+              >
+            </div>
+          </div>
+
+        </div>
+
+
+        <!-- ACADEMIC INFORMATION -->
+        <div class="form-section-title academic-title">
+          <span class="section-number">02</span>
+
+          <div>
+            <h3>Academic Information</h3>
+            <p>Select the student's class and section</p>
+          </div>
+        </div>
+
+        <div class="form-grid">
+
+          <!-- CLASS -->
+          <div class="form-group">
+            <label for="className">
+              Class / Stream <span class="required-star">*</span>
+            </label>
+
+            <div class="input-wrapper select-wrapper">
+              <i class="fa-solid fa-school input-icon"></i>
+
+              <select
+                id="className"
+                name="className"
+                required
+              >
+                <option value="" disabled selected>
+                  Select class
+                </option>
+
+                <optgroup label="Middle School">
+                  <option value="III">Class III</option>
+                  <option value="IV">Class IV</option>
+                  <option value="V">Class V</option>
+                  <option value="VI">Class VI</option>
+                  <option value="VII">Class VII</option>
+                  <option value="VIII">Class VIII</option>
+                </optgroup>
+
+                <optgroup label="Secondary School">
+                  <option value="IX">Class IX</option>
+                  <option value="X">Class X</option>
+                </optgroup>
+
+                <optgroup label="Class XI">
+                  <option value="XI Science">XI Science</option>
+                  <option value="XI Commerce">XI Commerce</option>
+                  <option value="XI Arts">XI Arts</option>
+                </optgroup>
+
+                <optgroup label="Class XII">
+                  <option value="XII Science">XII Science</option>
+                  <option value="XII Commerce">XII Commerce</option>
+                  <option value="XII Arts">XII Arts</option>
+                </optgroup>
+
+              </select>
+
+              <i class="fa-solid fa-chevron-down select-arrow"></i>
+            </div>
+          </div>
+
+
+          <!-- SECTION -->
+          <div class="form-group">
+            <label for="section">
+              Section <span class="required-star">*</span>
+            </label>
+
+            <div class="input-wrapper select-wrapper">
+              <i class="fa-solid fa-layer-group input-icon"></i>
+
+              <select
+                id="section"
+                name="section"
+                required
+              >
+                <option value="" disabled selected>
+                  Select section
+                </option>
+
+                <option value="A">Section A</option>
+                <option value="B">Section B</option>
+                <option value="C">Section C</option>
+                <option value="D">Section D</option>
+                <option value="E">Section E</option>
+                <option value="F">Section F</option>
+                <option value="G">Section G</option>
+                <option value="H">Section H</option>
+                <option value="I">Section I</option>
+                <option value="J">Section J</option>
+                <option value="K">Section K</option>
+                <option value="L">Section L</option>
+                <option value="M">Section M</option>
+                <option value="N">Section N</option>
+                <option value="O">Section O</option>
+                <option value="P">Section P</option>
+                <option value="Q">Section Q</option>
+                <option value="R">Section R</option>
+                <option value="S">Section S</option>
+                <option value="T">Section T</option>
+                <option value="U">Section U</option>
+                <option value="V">Section V</option>
+                <option value="W">Section W</option>
+                <option value="X">Section X</option>
+                <option value="Y">Section Y</option>
+                <option value="Z">Section Z</option>
+              </select>
+
+              <i class="fa-solid fa-chevron-down select-arrow"></i>
+            </div>
+          </div>
+
+        </div>
+
+
+        <!-- FORM MESSAGE -->
+        <div
+          id="formMessage"
+          class="form-message"
+          role="status"
+          aria-live="polite"
+          hidden
+        ></div>
+
+
+        <!-- ACTION BUTTONS -->
+        <div class="form-actions">
+
+          <button
+            type="reset"
+            class="btn btn-secondary"
+            id="resetButton"
+          >
+            <i class="fa-solid fa-rotate-left"></i>
+            Clear Form
+          </button>
+
+          <button
+            type="submit"
+            class="btn btn-primary"
+            id="submitButton"
+          >
+            <span class="button-label">
+              Save Student Record
+            </span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+            <span class="button-spinner" hidden>
+              <i class="fa-solid fa-circle-notch fa-spin"></i>
+            </span>
+          </button>
+
+        </div>
+
+        <p class="form-footer-note">
+          <i class="fa-solid fa-lock"></i>
+          Please verify the details before saving.
+        </p>
+
+      </form>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="app-footer">
+      <div>
+        <strong>StudentPortal</strong>
+        <span> · Premium Data Entry</span>
+      </div>
+
+      <p>Designed for organized student records.</p>
+    </footer>
+
+  </main>
+
+
+  <!-- SUBMISSION ANIMATION MODAL -->
+  <div
+    id="successModal"
+    class="success-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="successTitle"
+    hidden
+  >
+    <div class="success-backdrop"></div>
+
+    <div class="success-dialog">
+
+      <div class="success-animation" id="successAnimation">
+        <div class="success-ring"></div>
+
+        <div class="success-icon">
+          <i class="fa-solid fa-check"></i>
+        </div>
+
+        <span class="success-spark spark-one"></span>
+        <span class="success-spark spark-two"></span>
+        <span class="success-spark spark-three"></span>
+        <span class="success-spark spark-four"></span>
+      </div>
+
+      <span class="success-eyebrow">RECORD CONFIRMED</span>
+
+      <h2 id="successTitle">Student Saved!</h2>
+
+      <p id="successText">
+        The student record has been submitted successfully.
+      </p>
+
+      <button
+        type="button"
+        class="btn btn-primary success-close"
+        id="successClose"
+      >
+        Continue
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+
+    </div>
+  </div>
+
+
+  <!-- ASSETS MUST LOAD BEFORE MAIN JAVASCRIPT -->
+  <script src="assets.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
