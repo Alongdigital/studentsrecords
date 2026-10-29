@@ -9,7 +9,7 @@
 
 const ASSETS = {
   // Website branding
-  logo: "https://placehold.co/160x160/635bff/ffffff.png?text=SP",
+  logo: "https://imgh.in/host/j5248w",
 
   // Main hero banner
   hero: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1200&q=85",
