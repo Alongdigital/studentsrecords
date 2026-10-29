@@ -20,7 +20,7 @@ const ASSETS = {
 
     classroom: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1000&q=85",
 
-    library: "https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1000&q=85"
+    library: "https://imgh.in/host/ot51fo"
   }
 };
 
