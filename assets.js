@@ -18,7 +18,7 @@ const ASSETS = {
   images: {
     students: "https://imgh.in/host/v6cirl",
 
-    classroom: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1000&q=85",
+    classroom: "https://imgh.in/host/5nlkrw",
 
     library: "https://imgh.in/host/ot51fo"
   }
