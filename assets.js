@@ -16,7 +16,7 @@ const ASSETS = {
 
   // Optional additional images for future pages
   images: {
-    students: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1000&q=85",
+    students: "https://imgh.in/host/v6cirl",
 
     classroom: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1000&q=85",
 
